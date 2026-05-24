@@ -17,13 +17,6 @@ Optional: run a quick smoke test of every installed processor:
 python test_algos.py
 ```
 
-## Deploy on Streamlit Community Cloud
-
-1. Push this repository to GitHub (include `models/DeepFilterNet3/` so DeepFilterNet can run without downloads).
-2. Open [share.streamlit.io](https://share.streamlit.io), connect the repo, and set the main file to `app.py`.
-3. Community Cloud reads `requirements.txt` for Python packages and `packages.txt` for system libraries (`libsndfile1`, Rust toolchain for `deepfilterlib`).
-
-The first deploy may take several minutes while PyTorch and DeepFilterNet build. If the DL stack fails to install, the app still runs—the DSP and ML methods work without DeepFilterNet.
 
 ## Layout
 
